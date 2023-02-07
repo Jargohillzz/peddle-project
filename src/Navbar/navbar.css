@@ -1,0 +1,120 @@
+.logo {
+  font-family: "Ranchers", cursive;
+  font-size: 30px;
+  color: #ba55d3;
+  letter-spacing: 1px;
+}
+.nav-container {
+  display: flex;
+  flex-direction: column;
+}
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+}
+.nav-toggle {
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+.nav-links {
+  position: relative;
+}
+.links-container {
+  height: 0;
+  overflow: hidden;
+  text-align: center;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: all 0.5s ease-in-out;
+}
+.show-links {
+  height: 300px;
+}
+/* .links-container .linkss {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+} */
+.links-container .links {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.links-container .links p {
+  padding: 20px 0;
+  border-bottom: 1px solid #222;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.links-container .links .link {
+  text-decoration: none;
+  color: #222;
+  text-transform: capitalize;
+}
+.links-container .links .link:hover {
+  color: #ba55d3;
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+.btn {
+  color: #0b132a;
+  border: none;
+  font-size: 20px;
+  padding: 10px 20px;
+
+  background-color: #fff;
+  cursor: pointer;
+}
+.btn-outline {
+  color: #ba55d3;
+  border: 4px solid #ba55d3;
+  font-size: 20px;
+  padding: 10px 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 1024px) {
+  .nav-toggle {
+    display: none;
+  }
+  .nav-container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25%;
+  }
+  .links-container {
+    height: auto !important;
+  }
+  .nav-links {
+    flex-grow: 2;
+  }
+  .links-container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .links-container .links {
+    flex-direction: row;
+    margin-bottom: 0;
+    gap: 40px;
+  }
+  .links-container .links p {
+    border: none;
+  }
+  .button-container {
+    justify-content: end;
+    gap: 0;
+  }
+}
