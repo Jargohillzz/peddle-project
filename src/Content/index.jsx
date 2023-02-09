@@ -4,6 +4,11 @@ import provideSVG from "../assets/provideImg.svg";
 import freeSVG from "../assets/freeSVG.svg";
 import standardSVG from "../assets/standardSVG.svg";
 import premiumSVG from "../assets/premiumSVG.svg";
+import netflixSVG from "../assets/netflixSVG.svg";
+import discordSVG from "../assets/discordSVG.svg";
+import redditSVG from "../assets/redditSVG.svg";
+import spotifySVG from "../assets/spotifySVG.svg";
+import amazonSVG from "../assets/amazonSVG.svg";
 
 const Content = () => {
   return (
@@ -146,6 +151,31 @@ const Content = () => {
               </h2>
               <button className="selectBtn">select</button>
             </div>
+          </div>
+        </div>
+      </section>
+      <section className="start-section">
+        <h2>Get Started With Paddle Today</h2>
+        <p>
+          Praesent mollis lobortis nisl nec laoreet. Duis euismod nisl nec ante
+          egestas ullamcorper
+        </p>
+        <button className="start-btn">start today</button>
+        <div className="socials">
+          <div className="social">
+            <img src={netflixSVG} alt="" />
+          </div>
+          <div className="social">
+            <img src={redditSVG} alt="" />
+          </div>
+          <div className="social">
+            <img src={netflixSVG} alt="" />
+          </div>
+          <div className="social">
+            <img src={discordSVG} alt="" />
+          </div>
+          <div className="social">
+            <img src={spotifySVG} alt="" />
           </div>
         </div>
       </section>

@@ -52,6 +52,10 @@
   margin-bottom: 20px;
   color: #0b132a;
 }
+.plan-section > p {
+  max-width: 555px;
+  margin: 0 auto;
+}
 .plans {
   margin: 40px 0;
 }
@@ -124,6 +128,7 @@
   color: #ba55d3;
   cursor: pointer;
   text-transform: capitalize;
+  transition: 0.3s ease;
 }
 .plan .selectBtn:hover {
   color: white;
@@ -137,5 +142,55 @@
   }
   .plan {
     width: 330px;
+  }
+}
+
+/* start section */
+.start-section {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.start-section > h2 {
+  font-size: 35px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: #0b132a;
+  line-height: 50px;
+}
+.start-section > p {
+  max-width: 555px;
+  margin: 0 auto;
+}
+
+.start-btn {
+  width: 180px;
+  margin: 20px auto;
+  height: 45px;
+  border: 3px solid #ba55d3;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 1rem;
+  background-color: #ba55d3;
+  color: #fff;
+  cursor: pointer;
+  text-transform: capitalize;
+  transition: 0.3s ease;
+  box-shadow: 0px 3px 0px rgba(186, 85, 211, 0.4);
+}
+.start-btn:hover {
+  box-shadow: none;
+  transform: translateY(3px);
+}
+
+.start-section .socials {
+  display: none;
+}
+
+@media only screen and (min-width: 1024px) {
+  .start-section .socials {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }

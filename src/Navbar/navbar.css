@@ -1,9 +1,3 @@
-.logo {
-  font-family: "Ranchers", cursive;
-  font-size: 30px;
-  color: #ba55d3;
-  letter-spacing: 1px;
-}
 .nav-container {
   display: flex;
   flex-direction: column;
@@ -32,7 +26,7 @@
   transition: all 0.5s ease-in-out;
 }
 .show-links {
-  height: 300px;
+  height: 350px;
 }
 /* .links-container .linkss {
   position: absolute;
@@ -69,9 +63,10 @@
   border: none;
   font-size: 20px;
   padding: 10px 20px;
-
+  border-radius: 10px;
   background-color: #fff;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 .btn-outline {
   color: #ba55d3;
@@ -81,6 +76,12 @@
   background-color: #fff;
   border-radius: 10px;
   cursor: pointer;
+  transition: all 0.3s ease;
+}
+.btn:hover,
+.btn-outline:hover {
+  background-color: #ba55d3;
+  color: #fff;
 }
 
 @media only screen and (min-width: 1024px) {
