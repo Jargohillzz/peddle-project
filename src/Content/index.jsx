@@ -9,6 +9,7 @@ import discordSVG from "../assets/discordSVG.svg";
 import redditSVG from "../assets/redditSVG.svg";
 import spotifySVG from "../assets/spotifySVG.svg";
 import amazonSVG from "../assets/amazonSVG.svg";
+import { Link } from "react-router-dom";
 
 const Content = () => {
   return (
@@ -160,7 +161,11 @@ const Content = () => {
           Praesent mollis lobortis nisl nec laoreet. Duis euismod nisl nec ante
           egestas ullamcorper
         </p>
-        <button className="start-btn">start today</button>
+        <button>
+          <Link to="/signin" className="Link start-btn">
+            start today
+          </Link>
+        </button>
         <div className="socials">
           <div className="social">
             <img src={netflixSVG} alt="" />

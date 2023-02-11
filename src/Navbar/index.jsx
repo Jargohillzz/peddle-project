@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useRef } from "react";
 import "./navbar.css";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const navRef = useRef();
@@ -61,8 +62,16 @@ const Navbar = () => {
               })}
             </div>
             <div className="button-container">
-              <button className="btn">Sign In</button>
-              <button className="btn-outline">Sign Up</button>
+              <button>
+                <Link to="/signin" className="Link btn">
+                  Sign In
+                </Link>
+              </button>
+              <button>
+                <Link to="signup" className="Link btn-outline">
+                  Sign Up
+                </Link>
+              </button>
             </div>
           </div>
         </div>

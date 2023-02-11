@@ -14,14 +14,14 @@ font-family: 'Rubik', sans-serif; */
   color: var(--text-color);
 }
 
-.App {
+.main {
   width: 90%;
   max-width: 1200px;
   margin: 40px auto;
   background-color: #fff;
 }
 body {
-  box-shadow: 0px 4px 0px rgba(51, 51, 51, 0.3);
+  box-shadow: 0px 10px 20px rgba(51, 51, 51, 0.3);
 }
 
 p {
@@ -40,4 +40,12 @@ h2 {
   font-size: 30px;
   color: #ba55d3;
   letter-spacing: 1px;
+}
+button {
+  border: none;
+  outline: none;
+}
+.Link {
+  display: block;
+  text-decoration: none;
 }

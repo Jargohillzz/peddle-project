@@ -1,18 +1,19 @@
 import "./App.css";
-import Content from "./Content";
-import Footer from "./Footer";
-import Hero from "./Hero";
-import Navbar from "./Navbar";
-import Reviews from "./Reviews";
+import Main from "./Main";
+import SignUp from "./SignUp";
+import SignIn from "./SignIn";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <Hero />
-      <Content />
-      <Reviews />
-      <Footer />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Main />} />
+          <Route path="/signup" element={<SignUp />} />
+          <Route path="/signin" element={<SignIn />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

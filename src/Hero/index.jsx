@@ -4,6 +4,7 @@ import heroSVG from "../assets/heroSvg.svg";
 import serverSVG from "../assets/server.svg";
 import locationSVG from "../assets/location.svg";
 import userSVG from "../assets/user.svg";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   const heroIcons = [
@@ -36,7 +37,11 @@ const Hero = () => {
             orci condimentum lectus efficitur tempor vel eu massa. Sed molestie
             turpis eget ipsum malesuada dignissim
           </p>
-          <button className="heroBtn">get started</button>
+          <button>
+            <Link to="/signin" className="Link heroBtn">
+              get started
+            </Link>
+          </button>
         </div>
         <div className="hero-cont-right">
           <div className="hero-img">

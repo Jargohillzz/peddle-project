@@ -1,0 +1,118 @@
+.sign-up-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sign-up-card {
+  width: 90%;
+  max-width: 700px;
+  padding: 20px;
+  font-size: 1rem;
+  box-shadow: 0 0 10px 10px rgba(186, 85, 211, 0.2);
+  position: relative;
+}
+.sign-up-card > p {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.sign-main-text {
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+form {
+  background-color: rgba(186, 85, 211, 0.1);
+  padding: 20px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+}
+.form label {
+  font-size: 18px;
+  font-weight: 500;
+}
+.form input {
+  border: none;
+  padding: 5px;
+  font-size: 16px;
+  border-radius: 10px;
+}
+.form input:focus {
+  border: 3px solid rgba(186, 85, 211, 0.5);
+  outline: none;
+}
+.form-terms {
+  display: flex;
+  gap: 10px;
+  text-transform: capitalize;
+}
+.form-terms span {
+  color: #ba55d3;
+}
+.form-terms span:hover {
+  border-bottom: 1px solid #ba55d3;
+}
+form .submit-btn {
+  padding: 10px 50px;
+  color: #fff;
+  background-color: #ba55d3;
+  text-transform: capitalize;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  margin-top: 20px;
+}
+form .w-100 {
+  width: 100%;
+}
+form .submit-btn:disabled {
+  background-color: #999999;
+}
+.remember-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.remember {
+  display: flex;
+  gap: 7px;
+}
+.forgot:hover {
+  color: #ba55d3;
+  text-decoration: underline;
+}
+.sign-toggle {
+  margin-top: 10px;
+  margin-bottom: 0 !important;
+}
+.sign-toggle span {
+  color: #ba55d3;
+  text-transform: capitalize;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.go-home {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .form-name,
+  .form-passwords {
+    display: flex;
+    gap: 4%;
+  }
+  .first-name,
+  .last-name,
+  .form-password,
+  .form-confirm {
+    width: 48%;
+  }
+}
