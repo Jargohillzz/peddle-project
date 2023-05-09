@@ -67,6 +67,12 @@ form .submit-btn {
   border-radius: 10px;
   font-size: 20px;
   margin-top: 20px;
+  box-shadow: 0 1px 0 0 #612c6e;
+  transition: all 0.3s ease;
+}
+form .submit-btn:hover {
+  transform: translateY(1px);
+  box-shadow: none;
 }
 form .w-100 {
   width: 100%;
@@ -101,6 +107,9 @@ form .submit-btn:disabled {
   position: absolute;
   top: 10px;
   right: 20px;
+}
+.forgot {
+  cursor: pointer;
 }
 
 @media only screen and (min-width: 1024px) {

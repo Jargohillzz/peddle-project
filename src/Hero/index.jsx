@@ -39,7 +39,7 @@ const Hero = () => {
           </p>
           <button>
             <Link to="/signin" className="Link heroBtn">
-              get started
+              <p>get started</p>
             </Link>
           </button>
         </div>

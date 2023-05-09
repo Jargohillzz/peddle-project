@@ -15,18 +15,17 @@ const Reviews = () => {
   };
   const handleNext = () => {
     if (counter < 5) {
-      setCounter(scroller / 450);
-      setCounter((counter) => Math.ceil(counter) + 1);
+      setCounter(Math.round(scroller / 450));
+      setCounter((counter) => counter + 1);
     }
   };
   const handlePrev = () => {
     if (counter > 0) {
-      setCounter(scroller / 450);
-      setCounter((counter) => Math.ceil(counter) - 1);
+      setCounter(Math.round(scroller / 450));
+      setCounter((counter) => counter - 1);
     }
   };
   useEffect(() => {
-    console.log(counter);
     sliderRef.current.scrollTo(counter * 450, 0);
   }, [counter]);
   const review = [

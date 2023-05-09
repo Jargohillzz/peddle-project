@@ -8,12 +8,28 @@
   line-height: 50px;
 }
 .heroBtn {
-  padding: 1rem 4.5rem;
-  color: #fff;
+  padding: 0.6rem 0;
+  width: 180px;
   background-color: #ba55d3;
   border: none;
   border-radius: 10px;
   margin-top: 20px;
+  outline: 2px dashed rgba(186, 85, 211, 0.8);
+  outline-offset: -2px;
+  transition: all 500ms ease-in;
+}
+.heroBtn p {
+  text-transform: capitalize;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  transition: letter-spacing 300ms linear;
+}
+.heroBtn:is(:hover, :focus) {
+  outline-offset: 3px;
+}
+.heroBtn:is(:hover, :focus) > p {
+  letter-spacing: 2px;
 }
 .hero-cont-right {
   margin-top: 30px;
